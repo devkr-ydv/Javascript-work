@@ -20,7 +20,6 @@ const id = Symbol('123')
 
     these datatype  will get direct reference into the memory
        They are : Array , Objects ,Functions
-
 */
 // const id = Symbol('123')
 // const newValue = Symbol('123')
@@ -42,4 +41,4 @@ const myFunction = function(){
     console.log("hello world");
 
 }
-console.log(typeof )
+console.log(typeof heros)
