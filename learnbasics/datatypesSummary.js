@@ -27,7 +27,7 @@ const id = Symbol('123')
 
 
 // Array , Functions , Objects
-const heros =[ "ironman", "batman", "spiderman"];
+const heros =[ "ironman", "batman", "spiderman" ];
  let obj =
  {
     name: "Dev",
@@ -41,4 +41,4 @@ const myFunction = function(){
     console.log("hello world");
 
 }
-console.log(typeof heros)
+console.log(typeof heros);
