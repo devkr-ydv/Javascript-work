@@ -27,7 +27,6 @@ const id = Symbol('123')
 
 
 // Array , Functions , Objects
-const heros =[ "ironman", "batman", "spiderman" ];
  let obj =
  {
     name: "Dev",
