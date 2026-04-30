@@ -24,6 +24,9 @@ indexOf(), .join() , .push(), .pop(), .unshift(), .shift(),
  .slice(a,b){make a new array from a to b-1 index and no change is made in original array in memory}
  .splice(a,b) {make a new array from a to b included and change is also made in original array in memory}
 
+ ArrayX.push(ArrayY)
+ ArrayX.concat(ArrayY)
+ ArrayX.spread(ArrayY)
 
 
 
