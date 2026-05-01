@@ -26,8 +26,24 @@ indexOf(), .join() , .push(), .pop(), .unshift(), .shift(),
 
  ArrayX.push(ArrayY)
  ArrayX.concat(ArrayY)
- ArrayX.spread(ArrayY)
+ // Spread is not a method but a operation , way of working // console.log([...marvel_heroes,...dc_heroes])
+ // Spread is used when there is more than one array to combine
+ 
 
+ Array.isArray("hello")// to check if it is an array
+ Array.from("Dev")//convert from string to array
+Array.of(score1, score2, score3)
+
+_____________
+Object{
+name:"dev",
+age:22,
+course:"b.tech"
+}
+
+console.log(`Hello my name is this ${call the method here} `)
+console.log(ObjectName["method"])
+ JsUser.greetings = function(){}                                  //Function Works as variable in JS
 
 
 
