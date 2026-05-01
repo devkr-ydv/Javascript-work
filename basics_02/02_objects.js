@@ -62,3 +62,4 @@ console.log(Object.keys(tiktokUser));//[ 'id', 'name', 'isLoggedIn' ]
 console.log(Object.values(tiktokUser));//[ '123azx', 'Max', false ]
 console.log(Object.entries(tiktokUser));//[ [ 'id', '123azx' ], [ 'name', 'Max' ], [ 'isLoggedIn', false ] ]
 console.log(tiktokUser.hasOwnProperty('isLoggedIn'));//true
+console.log("good");
