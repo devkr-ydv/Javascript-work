@@ -54,12 +54,51 @@ const users =[
 }
 ]
 users[1].email
-console.log(tiktokUser);//{ id: '123azx', name: 'Max', isLoggedIn: false }
+// console.log(tiktokUser);//{ id: '123azx', name: 'Max', isLoggedIn: false }
 
-console.log(Object.keys(tiktokUser));//[ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.keys(tiktokUser));//[ 'id', 'name', 'isLoggedIn' ]
 // Datatype of this output is array , can now make loops and use it in various palces
 // Used while working with database
-console.log(Object.values(tiktokUser));//[ '123azx', 'Max', false ]
-console.log(Object.entries(tiktokUser));//[ [ 'id', '123azx' ], [ 'name', 'Max' ], [ 'isLoggedIn', false ] ]
-console.log(tiktokUser.hasOwnProperty('isLoggedIn'));//true
-console.log("good");
+// console.log(Object.values(tiktokUser));//[ '123azx', 'Max', false ]
+// console.log(Object.entries(tiktokUser));//[ [ 'id', '123azx' ], [ 'name', 'Max' ], [ 'isLoggedIn', false ] ]
+// console.log(tiktokUser.hasOwnProperty('isLoggedIn'));//true
+// console.log("good");
+
+
+
+// Destructuring
+const course = {
+    coursename:"Js in hindi",
+    fees:"999",
+    courseInstructor:"Hitesh"
+}
+//course.courseInstructor
+
+const {courseInstructor: instructor} = course // way of extracting from the object 
+//console.log(courseInstructor);
+console.log(instructor);
+
+// consy navbar = ({company}) => { // Destructuring
+
+// }
+// navbar(company ="Hitesh")
+
+
+// API (giving my work to someone else)
+    // Now all the values are is JSon
+    // {
+    //     "name":"Dev"
+    //     "coursename": "Js in hindi"
+    //     "price":"free"
+    // }
+
+    // We will try to convert the API to objects
+      // JSon is just like object but without objectName
+      //Json is Js object notation and can look like object or array
+    [
+{},
+{},
+{},
+
+    ]
+    
