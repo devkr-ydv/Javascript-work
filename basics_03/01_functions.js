@@ -14,7 +14,7 @@ sayMyName// this is reference
      console.log(num1+num2)
 
  }
- //addTwoNumbers(2,5)// Output : Doesn't return anything
+ addTwoNumbers(2,5)// Output : Doesn't return anything
  //console.log(addTwoNumbers(2,4)) // Output : 6
 
  // For any operation inside function to show in output we must use the return 
