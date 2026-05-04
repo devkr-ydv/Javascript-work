@@ -34,8 +34,10 @@ indexOf(), .join() , .push(), .pop(), .unshift(), .shift(),
  Array.from("Dev")//convert from string to array
 Array.of(score1, score2, score3)
 
-_____________
-Object{
+________________________________
+Objects
+
+const Myself = {
 name:"dev",
 age:22,
 course:"b.tech"
@@ -45,6 +47,46 @@ console.log(`Hello my name is this ${call the method here} `)
 console.log(ObjectName["method"])
  JsUser.greetings = function(){}                                  //Function Works as variable in JS
 
+
+
+const newObj = Object.assign({}, obj1, obj2, obj3)
+const myObj = {...obj1, ...obj2, ...obj3}
+
+// Destructuring
+const {name:n, age:a} = Myself
+console.log(a)
+
+______________________________
+
+functions
+
+function addTwoNumbers(num1, num2){
+        return num1 +num2
+
+}
+console.log(addTwoNumbers(3,6));
+
+Pass object inside the function
+const pass ={
+name:"Dev",
+course:"Computer Science",
+year:"4th year"
+}
+
+function passObject(objectvalue){
+   console.log(`The name of the following is ${objectvalue.name} and the year of study is ${objectvalue.year}`)
+
+}
+   passObject(pass)
+
+
+Pass Array inside the function
+const newArray = [200, 400, 500 600]
+
+function workArray(newvalue){
+return newvalue[1]
+}
+console.log(workArray(newArray));
 
 
 */
