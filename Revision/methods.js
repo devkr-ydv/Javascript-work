@@ -88,6 +88,29 @@ return newvalue[1]
 }
 console.log(workArray(newArray));
 
+___________________________________
+Global and Block Scope
+
+scope are the things inside the curley braces of function and object
+
+Nested Fucntion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 */
 console.log("Revise Daily to Get Excellence")
