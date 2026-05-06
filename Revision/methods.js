@@ -58,7 +58,7 @@ console.log(a)
 
 ______________________________
 
-functions
+function()
 
 function addTwoNumbers(num1, num2){
         return num1 +num2
@@ -95,12 +95,31 @@ scope are the things inside the curley braces of function and object
 
 Nested Fucntion
 
+function placement(marks , project){
+username:"Dev",
+year:"4th"
+
+function prepration(work, study){
+time:"5 hours"
+console.log(`The study time is ${time} and the name of the student is ${username}`)
+
+}
+
+}
 
 
+________________________
+ Arrow and this 
 
+ const newArrow = (parameter1, parameter2) =>{           // first  way
+   let myName:"Dev",
+   console.log(`Name of student is ${myName}`)
+ }
 
-
-
+const newArrow =(num1, num2) => num1 +num2            // second way which is used when there is one line of code
+const newArrow =(num1, num2) => (num1 + num2)
+ 
+const newArrow =(num1, num2) =>({name:"Dev"})
 
 
 
