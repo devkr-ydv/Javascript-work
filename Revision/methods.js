@@ -73,11 +73,12 @@ course:"Computer Science",
 year:"4th year"
 }
 
-function passObject(objectvalue){
-   console.log(`The name of the following is ${objectvalue.name} and the year of study is ${objectvalue.year}`)
+function ObjectName(objectparameter){
+const name = "Krishna"
+   console.log(`The name of the following is ${objectparameter.name} and the year of study is ${objectparameter.year}`)
 
 }
-   passObject(pass)
+   ObjectName(pass)
 
 
 Pass Array inside the function
@@ -122,12 +123,43 @@ const newArrow =(num1, num2) => (num1 + num2)
 const newArrow =(num1, num2) =>({name:"Dev"})
 
 
+______________
+ 
+IIFE (Immediately Invoked Function Execution)
+ // Put the function inside parenthesis and no need to give object name for call
+  ()();
+
+  (function newType(num1, num2){
+  console.log(num1+num2) 
+        })();
 
 
+  (const NewType1 = function(parameter1, parameter2){
+      const result = parameter1 * parameter2;
+      retutn result;
+  
+  })();      
+
+(nameoffunction(num1,num2) =>{
+  // function deifnition
+  } )();
 
 
+  __________________
 
+  How the JS program is run by engine (node, browser(Window is the gobal object in browser))
 
+  Step1: Creation of Global Execution  => stored in this
+  Step2: Phase 1 => Memory Allocation => memory is alloted to all the varibales declared and give them as undefined (give the functoin as definition)
+  Step3: Phase 2 => Execution Phase => variables are given value and when the operation step arrives then function call is made then 
+          
+  * A new daughter global execution is created for the function call that was made (Step 2 and 3 will be done again and now the output value will be achieved )
+  * The output value is provided back to the parent Global execution
+  * * After the work of daughter execution is done it is deleted 
+  * The same will be done for all the function call of the operation
+  
+
+  ___________________
 
 
 
