@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+
+
+
+<script>
+    // const sayMyName = function(){
+    //     console.log("Dev")
+    // }
+    // setTimeout(sayMyName,2000)
+setTimeout(function (){
+    console.log("Hitesh");
+},2000)
+
+const changeTitle = function(){
+    document.querySelector('h1').
+    innerHTML="BEst Js Series"
+}
+const changeMe = setTimeout(changeTitle,3000)
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("STOPPED")
+})
+
+
+</script>
+</html>
+
+// setTimeout() : does the work print once
+// setInterval() : prints the same thing after fixed given interval
