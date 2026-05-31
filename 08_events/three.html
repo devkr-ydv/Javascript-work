@@ -16,13 +16,40 @@
 
 
 <script>
-const sayDate = function(str){
+/*const sayDate = function(str){
     console.log(str, Date.now());
 }
 const intervalId = setInterval(sayDate, 1000, "hello")
 clearInterval(intervalId)
+*/
+
+let IntervalId;
+  document.querySelector('#start').addEventListener('click',function(){
+      IntervalId = setInterval(function(){
+        console.log("Dev in house");
+     },2000)
+   
+
+});
+
+
+document.querySelector('#stop').addEventListener('click',function(a){
+
+    clearInterval(IntervalId,1000);
+    console.log("Stopped");
+
+
+});
+
+
+
+
+
+
 </script>
 </html>
+
+
 
 // setTimeout() : does the work print once
 // setInterval() : prints the same thing after fixed given interval
