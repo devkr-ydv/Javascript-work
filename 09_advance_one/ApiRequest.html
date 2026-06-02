@@ -1,0 +1,32 @@
+// XML http request
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: #212121; color:#fff">
+   0 .(Unsent): Request not sent Client has been created . open() not called yet
+   1.(Opened) : Request sent open()has been called
+   2.(HEADERS_RECEIVED) : something has been received but the state has not ;send() has been called, and header and status are available
+   3.(LODING DOWNLOADING) :response text , hold partial data
+   4.(DONE) :The operation is complete
+   
+
+</body>
+
+<script> 
+     const requestUrl = 'https://randomuser.me/api/' 
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+
+console.log(xhr.readyState);
+
+    }
+    
+    xhr.send();
+</script>
+</html>
