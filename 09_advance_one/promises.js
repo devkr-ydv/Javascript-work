@@ -121,7 +121,7 @@ new Promise (function(resolve, reject){
    // 
    // async function getAllUsers(){
    //     try{
-   //    const response = await fetch('')
+   //    const response = await fetch('https://jsonplaceholder.typicode.com/users')
    //    const data = await response.json()
    //    console.log(data);
    //     }
@@ -142,3 +142,40 @@ new Promise (function(resolve, reject){
    console.log(data);
   } )
   .catch((error) => console.log(error))
+     
+  // Fetch does the work 
+
+  //  browser is not availble in nodeJs
+  // 
+  //  fetch() returns a promise
+   // fetch() promise only rejects when a network error is encountered to your request
+
+  // error of HTTP(404) is not rejected by fetch() , it comes as a response
+
+  /*
+    +++++++++
+   fetch('')
+   .then(function(response){
+   return response.json()
+   })
+   .then(function(data){
+   console.log(data)
+   })
+   .catch(function(error)}{
+   })
+   .finally()
+
+   ++++++++
+      async function getElements(){
+      try{
+      const response = await fetch('');
+      const data = await response.json();
+   } 
+      catch(error){
+       console.log("Error:", error)
+       }
+}
+       getElements()
+       
+
+  */
